@@ -34,7 +34,7 @@ const setmilestones = () => {
                 ]
             }]
         };
-        axios.post(`http://localhost:5000/addSession/5f86012389b2c90ed4823260/${projectId}`,data )
+        axios.post(`https://acadivity.herokuapp.com/addSession/5f86012389b2c90ed4823260/${projectId}`,data )
         .then (res=>{
             console.log(res.data)
         })

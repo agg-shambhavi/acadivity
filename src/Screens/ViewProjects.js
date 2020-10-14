@@ -79,7 +79,7 @@ function ViewProject() {
 
     const loadProducts = async () => {
         try {
-            const res = await fetch('http://localhost:5000/projects/5f86012389b2c90ed4823260');
+            const res = await fetch('https://acadivity.herokuapp.com/projects/5f86012389b2c90ed4823260');
             const data = await res.json();
             setProjectlist(data);
 
